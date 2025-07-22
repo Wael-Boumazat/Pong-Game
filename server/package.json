@@ -1,0 +1,51 @@
+{
+  "name": "ping-pong",
+  "version": "1.0.0",
+  "main": "backend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently  \"nodemon backend.js\" \"nodemon ./API/fileuploader.js\" \"nodemon ./controller/loginusers.js\" \"nodemon server.js\" \"nodemon ./controller/friendscontroller.js\" \"nodemon ./API/notification.js\" \"nodemon ./API/WebSocket/callsocket.js\" \"nodemon ./API/mails/sendMails/sendMail.js\" \"nodemon ./API/WebSocket/GameSocket.js\"",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "@googleapis/gmail": "^13.0.1",
+    "bcrypt": "^5.1.1",
+    "concurrently": "^9.1.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "googleapis": "^105.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "livereload": "^0.9.3",
+    "mongoose": "^8.12.1",
+    "multer": "^1.4.5-lts.2",
+    "multer-gridfs-storage": "^5.0.2",
+    "nodemailer": "^7.0.3",
+    "path": "^0.12.7",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "socket.io": "^4.8.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "@vitejs/plugin-react": "^4.4.1",
+    "babel-loader": "^10.0.0",
+    "html-webpack-plugin": "^5.6.3",
+    "nodemon": "^3.1.9",
+    "vite": "^6.3.5",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  }
+}

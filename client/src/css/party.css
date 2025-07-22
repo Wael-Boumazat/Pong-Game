@@ -1,0 +1,220 @@
+.Container-player{
+height: 100vh;
+display: flex;
+align-items: center;
+}
+
+.player1 , .player2{
+    width: 550px;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.img-container-player-1 img{
+    width: 300px;
+    height: 290px;
+    border-radius: 100%;
+
+}
+.time-up-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+}
+.player-1-name, .player-2-name{
+    font-family: "roboto";
+    font-size: 1.8rem;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.beetween-players{
+width: 350px;
+height: 100vh;
+border: 1px solid white;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+/* .player2{
+    width: 550px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+} */
+.img-container-player-2 img{
+    width: 300px;
+    height: 290px;
+    border-radius: 100%;
+}
+/* .player-2-name {
+    font-family: "roboto";
+    font-size: 1.8rem;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+} */
+.buttons-player1 ,.button-player2{
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+}
+.cancel{
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: orange;
+    font-family: "roboto";
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.cancel:hover{
+    filter: brightness(1.1);
+}
+.loader-container{
+    position: absolute;
+    left: 43%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    animation: glitch 2s infinite;
+}
+.loader-container::before,.loader-container::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
+    animation: glitch 2s infinite;
+}
+.loader-container::after{
+    clip-path: polygon(0 70%, 100% 70%, 100% 100%, 0 100%);
+}
+@keyframes glitch{
+    0%, 100% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-4px, 4px);
+    }
+    40% {
+        transform: translate(4px, -4px);
+    }
+    60% {
+        transform: translate(-4px, 4px);
+    }
+    80% {
+        transform: translate(4px, -4px);
+    }
+}
+.loader-container img{
+    width: 200px;
+    height: 200px;
+}
+.playername-div{
+    font-family: "roboto";
+    font-size: 1.8rem;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+}
+.timer-container{
+    width: 200px;
+    position: absolute;
+    top: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.countdown{
+    font-size: 2rem;
+    color: white;
+    text-shadow: 1px 1px 2px pink;
+    font-family: "roboto";
+}
+.waiting{
+    font-family: "roboto";
+    font-size: 1.8rem;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+    animation: wave 2s ease-in-out infinite
+}
+.waiting span{
+    display: inline-block;
+    font-size: 1.6rem;
+    animation: wave 2s ease-in-out infinite;
+}
+.waiting span:nth-child(1) {
+    animation-delay: 0s;
+}
+.waiting span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.waiting span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.waiting span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+.player-container{
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.player-container2{
+    width: 400px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.start-game{
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: orange;
+    font-family: "roboto";
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 700%;
+    transform: translate(-50%,-50%);
+}
+.start-game:hover{
+filter: brightness(1.2);
+}

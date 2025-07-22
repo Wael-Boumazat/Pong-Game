@@ -1,0 +1,110 @@
+body{
+    background-color: #87CEEB;
+}
+.container{
+    display: flex;
+    width: 100vh;
+    height: 700px;
+    margin-left: 230px;
+    margin-top: 70px;
+    background-position: center ;
+    border-radius: 30px;
+    background-image: url("/src/assets/pingpong.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.name{
+    width: 400px;
+    height:700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    border-left: 1px solid black;
+    border: 1px solid black;
+}
+h1{
+    font-family: "Arial";
+    margin-left: 30px;
+    align-self: flex-start;
+    margin-top: 50px;
+}
+.create{
+    width: 230px;
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border: 2px solid black;
+    background-color: orange;
+    font-family: "roboto";
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.create:hover , .log:hover{
+    filter: brightness(1.1);
+}
+#mkfr{
+    display: none;
+}
+#loginwindow{
+    display: none;
+}
+.log{
+    width: 230px;
+    height: 60px;
+    border-radius: 30px;
+    border: 2px solid black;
+    background-color: orange;
+    font-family: "roboto";
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.playwithfriends{
+    width: 500px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#playwithfriends,.ia{
+    height: 60px;
+    width: 200px;
+    border-radius: 30px;
+    background-color: orange;
+    font-family: "roboto";
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    border: 2px solid black;
+}
+/*remove the input text */
+#pp {
+    display: none; /* cache totalement l'input natif */
+  }
+  
+  .custom-file-label {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-image: url("no\ pp.jpg");
+    background-size: cover;
+  }
+  .divimg{
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    width: 300px;
+    height: 130px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  

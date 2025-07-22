@@ -1,0 +1,177 @@
+.user-img-container{
+    position: fixed;
+    top: 50%;
+    overflow-y: auto;
+    left: 50%;
+    direction: ltr;
+    transform: translate(-50%, -50%);
+    background: #15202b;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.02);
+    border: 3px solid #5bbce8;
+    z-index: 1000; 
+    width: 850px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "roboto";
+    gap: 10px;
+
+}
+li{
+    list-style: none;
+}
+ul{
+    position: relative;
+    top: -20px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.user-div{
+    height: 100px;
+    width: 750px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 20px; 
+}
+.user-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.div-img{
+    margin-left: 20px;
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    width: 110px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.span-div{
+    margin-left: 40px;
+    width: 450px;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+    .span-follow{
+        font-size: 1.1rem;
+        color: #5bbce8;
+
+    }
+    .follow-btn{
+        width: 90px;
+        height: 35px;
+        margin-left: 20px;
+        border: none;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-family: "roboto";
+        background-color: white;
+        cursor: pointer;
+        transition: background-color 0.6s ease;
+    }
+    .close-btn-react{
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: 1.5px solid #5bbce8;
+        background-image: url("/src/assets/close.png");
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+        position: sticky;
+        top: 20px;
+        left: -50px;
+}
+.close-btn-container{
+    width: 50px;
+    position: sticky;
+    top: 0.5px;
+    margin-left: -15px;
+}
+.loader{
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+.option_container{
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 650px;
+    border: 1px solid gray;
+    position: relative;
+    bottom: 60px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.InputContainer{
+    height: 54px;
+    width: 650px;
+    display: flex;
+}
+.Option-div-container{
+    width: 500px;
+    height: 54px;
+}
+.option-div{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    flex-direction: column;
+}
+.option-friends-button,.option-mkfr-button{
+    margin-top: 5px;
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.friends-span,.mkfr-span{
+    height: 20px;
+    color: white;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px pink;
+    font-family: "roboto";
+}
+.line{
+    width: 150px;
+    height: 3px;
+    margin:0 auto;
+    background-color: #1DA1F2;
+}
+.Option-div-container:hover{
+    background-color: gray;
+}
+.Friend-btn{
+    width: 90px;
+    height: 35px;
+    margin-left: 20px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: "roboto";
+    background-color: #5bbce8;
+    cursor: pointer;
+}
+

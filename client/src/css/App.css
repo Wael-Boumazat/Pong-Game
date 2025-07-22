@@ -1,0 +1,268 @@
+body,html{
+  background-color: #87CEEB; /* SkyBlue */
+  margin: 0px;
+}
+.container{
+  display: flex;
+  width: 900px;
+  height: 700px;
+  margin-left: 230px;
+  margin-top: 1px;
+  background-position: center ;
+  border-radius: 30px;
+  background-image: url("/src/assets/pingpong.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.name{
+  width: 400px;
+  height:700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  border-left: 1px solid black;
+  border: 1px solid black;
+}
+h1{
+  font-family: "Arial";
+  margin-left: 30px;
+  align-self: flex-start;
+  margin-top: 50px;
+}
+.create{
+  width: 230px;
+  height: 60px;
+  border-radius: 30px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border: 2px solid black;
+  background-color: orange;
+  font-family: "roboto";
+  margin-right: 15px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.create:hover , .log:hover{
+  filter: brightness(1.1);
+}
+#window , #loginwindow{
+  position: fixed;
+  display: none;
+  background-color: red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #5bbce8;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  z-index: 1000; 
+  width: 600px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.overplay {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1001;
+}
+#mkfr{
+  display: none;
+}
+#loginwindow{
+  display: none;
+}
+.log{
+  width: 230px;
+  height: 60px;
+  border-radius: 30px;
+  border: 2px solid black;
+  background-color: orange;
+  font-family: "roboto";
+  margin-right: 15px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.playwithfriends{
+  width: 500px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#playwithfriends,.ia{
+  height: 60px;
+  width: 200px;
+  border-radius: 30px;
+  background-color: orange;
+  font-family: "roboto";
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  border: 2px solid black;
+}
+/*remove the input text */
+#pp {
+  display: none; /* cache totalement l'input natif */
+}
+
+.custom-file-label {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-size: cover;
+}
+#imgnopp{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-size: cover;
+}
+.divimg{
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  width: 300px;
+  height: 130px;
+  flex-direction: column;
+  align-items: center;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex-direction: column;
+  width: 500px;
+  height: 400px;
+  gap: 10px;
+}
+.form input{
+  width: 260px;
+  height: 23px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 10px;
+  border: 2px solid black;
+  font-family: 'roboto';
+  font-size: 0.95rem;
+}
+.button-div{
+  width: 600px;
+  display: flex;
+  justify-content: start;
+}
+.close{
+  width: 30px;
+  border-radius: 100%;
+  height: 30px;
+  border: none;
+  background-image: url("/src//assets/close.png");
+  background-size: cover;
+  background-position: center;
+}
+.form-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 25px;
+  width: 600px;
+}
+.form input:focus{
+  outline: 2px solid rgb(40, 90, 140);
+}
+.form label{
+  font-family: "roboto";
+}
+.form button{
+  width: 150px;
+  height: 35px;
+  border-radius: 30px;
+  border: 2px solid black;
+  background-color: orange;
+  font-family: "roboto";
+  font-size: 1rem;
+  cursor: pointer;
+}
+#message {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: fixed;
+  top: -100px; /* Hide above the screen */
+  left: 50%;
+  width: 150px;
+  transform: translateX(-50%);
+  background-color: #14171A; /* Twitter blue */
+  color: #E1E8ED;
+  padding: 1em 2em;
+  border-radius: 8px;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: top 0.4s ease;
+  z-index: 9999;
+  border: 2px solid #1DA1F2;
+  font-family: "roboto";
+}
+#ppsp{
+  font-family: "roboto";
+}
+.login-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 587px;
+  height: 400px;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+.btn-close-container{
+  height: 30px;
+  display: flex;
+  justify-content: start;
+  margin-top: -20px;
+}
+#close-btn-login{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: none;
+  background-image: url("/src/assets/close.png");
+  background-size: cover;
+  background-position: center;
+  margin-left: -20px;
+}
+.errormsg{
+  color: red;
+  font-family: "roboto";
+  font-size: 0.9rem;
+  position: relative;
+  left: -80px;
+}
+.notification-div{
+  height: 50px;
+  width: 50px;
+  position: relative;
+  left: 1200px;
+  bottom: 820px;
+  cursor: pointer;
+}
+.Follow-paragraph{
+color: #5bbce8;;
+font-family: "roboto";
+margin-left: 20px;
+}

@@ -1,0 +1,30 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #dfdfdf;
+}
+.canvas{
+    border: 2px solid black;
+    width: 900px;
+    height: 500px;
+}
+.canva-container{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.score-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 800px;
+    height: 100px;
+}
+.score-container span{
+    font-family: "roboto";
+    font-size: 1.5rem;
+}

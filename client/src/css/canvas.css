@@ -1,0 +1,180 @@
+.Canvas-container{
+    position: absolute;
+    left: 20%;
+    top: 20%;
+}
+canvas{
+    border: 2px solid black;
+}
+.users-container{
+    display: flex;
+    justify-content: center;
+    width: 900px;
+}
+.img1-container,.img2-container{
+display: flex;
+margin-top: 20px;
+flex-direction: column;
+align-items: center;
+}
+.img1-container img,.img2-container img{
+    width: 100px ;
+    height: 100px;
+    border-radius: 100%;
+}
+.img1-container span , .img2-container span{
+    font-family: "roboto";
+    font-size: 1.1rem;
+
+}
+
+.beetween-imgs-game{
+    width: 7800px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+.beetween-imgs-game img{
+    width: 150px;
+    height: 150px;
+}
+
+.container_spans{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  filter: contrast(20);
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+.container_spans span {
+  color: rgb(230,255,230);
+  font-size: 8rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+  filter: blur(0.2rem);
+  display: block;
+  transition: all 1.5s ease;
+  opacity: 0;
+  filter: blur(0.6rem);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &:nth-child(1) {
+    animation: letteranim 11s infinite ease;
+    animation-delay: 0s;
+  }
+  &:nth-child(2) {
+    animation: letteranim 11s infinite ease;
+    animation-delay: 1.5s;
+  }
+  &:nth-child(3) {
+    animation: letteranim 11s infinite ease;
+    animation-delay: 3s;
+  }
+  &:nth-child(4) {
+    animation: letteranim 11s infinite ease;
+    animation-delay: 4s;
+  }
+}
+
+@keyframes letteranim {
+  0% {
+    opacity: 0;
+    filter: blur(0.6rem);
+  }
+  5% {
+    opacity: 1;
+    filter: blur(0.2rem);
+  }
+  10% {
+    opacity: 1;
+    filter: blur(0.2rem);
+  }
+  20% {
+    opacity: 0;
+    filter: blur(0.6rem);
+  }
+  100% {
+    opacity: 0;
+    filter: blur(0.6rem);
+  }
+}
+
+.Game-Won-Container,.lost-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Won-Container ,.Lost-message{
+  width: 200px;
+  height: 30px;
+  align-items: center;
+
+  display: flex;
+  justify-content: center;
+}
+.Won-Container span , .Lost-message span{
+  font-family: "arial";
+  font-size: 1.5rem;
+  text-shadow: 0.5px 0.5px 1px black;
+}
+
+.Second-Container,.Lost-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid aqua;
+  height: 500px;
+  border-radius: 25px;
+  width: 350px;
+  justify-content: space-around;
+  background-color: rgb(233, 233, 233);
+}
+.Stars-container , .cross-container{
+  width: 250px;
+  margin-top: -10px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.star1,.star3,.cross1,.cross3{
+  margin-top: 10px;
+}
+.winner-photo{
+margin-top: -30px;
+}
+.crown-container{
+  position: fixed;
+  height: 30px;
+  width: 40px;
+  transform: rotate(18deg);
+  margin-left: 180px;
+  top: 325px;
+}
+.winner-photo img{
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+}
+.return-home-button{
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: orange;
+  font-family: "roboto";
+  font-size: 1rem;
+  cursor: pointer;
+}

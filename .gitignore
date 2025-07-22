@@ -1,0 +1,7 @@
+/pingpong/
+/Websocket/
+/.vscode/
+server/API/mails/json/token.json
+server/API/mails/json/credentials.json
+server/API/mails/sendMails/gmail.js
+server/API/mails/sendMails/mail.js

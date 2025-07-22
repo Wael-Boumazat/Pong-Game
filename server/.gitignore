@@ -1,0 +1,6 @@
+/node_modules
+/Websocket/
+/pingpong/
+
+.env
+/API/mails/
